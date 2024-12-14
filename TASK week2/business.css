@@ -1,0 +1,84 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #f4f4f4;
+  background: url('bg1.jpg') no-repeat center center fixed; 
+  background-size: cover;
+  color: #333;
+}
+
+/* Business Details Container */
+#business-details {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #c4bbbb;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Business Title */
+#business-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #007bff;
+  text-align: center;
+}
+
+/* Business Description */
+#business-details p {
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Section Titles */
+#business-details h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #444;
+  text-align: center;
+}
+
+/* Service List */
+#business-details ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#business-details ul li {
+  margin: 5px 0;
+}
+
+/* Highlight Text */
+strong {
+  color: #007bff;
+}
+
+/* Link Styling */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #business-details {
+    padding: 15px;
+  }
+
+  #business-details h2 {
+    font-size: 20px;
+  }
+
+  #business-details h3 {
+    font-size: 18px;
+  }
+}

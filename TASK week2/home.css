@@ -1,0 +1,97 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c3c3c9;
+  background: url('bg1.jpg') no-repeat center center fixed; 
+  background-size: cover;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Categories Grid (Dynamically Added Content) */
+#categories {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.category {
+  background-color: #ffdbf7bb;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  cursor: pointer;
+}
+
+.category a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.category img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.category p {
+  color: #000;
+  font-size: 1.2em;
+  margin-top: 10px;
+  letter-spacing: 1.5px;
+}
+
+/* Bottom Section for Images and Descriptions */
+.bottom-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  background: rgba(255, 255, 255, 0.3); /* White background with 50% transparency */
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 940px) {
+  .bottom-section, #categories {
+    flex-wrap: wrap;
+  }
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  margin: 10px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.category-card p {
+  font-size: 1em;
+  color: #333;
+  text-align: center;
+}
