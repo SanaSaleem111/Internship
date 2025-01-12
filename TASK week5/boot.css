@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    background: url('bg4.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Container and Card Styles */
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 8px;
+    background-color: #b1aeae;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card Hover Effect */
+  .card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Service List Styles */
+  .service-item {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #afadad;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  .card-text {
+    font-size: 0.95rem;
+    color: #080808;
+  }
+  
+  /* Slider Labels */
+  .form-range {
+    margin-top: 10px;
+  }
+  
+  .d-flex span {
+    font-size: 0.85rem;
+    color: #343a40;
+  }
+  
+  /* Responsive Utilities */
+  @media (max-width: 768px) {
+    .card-title {
+      font-size: 1.1rem;
+    }
+  
+    .card-text {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card-title {
+      font-size: 1rem;
+    }
+  
+    .card-text {
+      font-size: 0.85rem;
+    }
+  
+    .filter-bar .form-label {
+      font-size: 0.9rem;
+    }
+  }  

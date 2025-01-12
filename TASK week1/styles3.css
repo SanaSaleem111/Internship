@@ -1,0 +1,82 @@
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Form container styling */
+.profile-container {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(131, 129, 129, 0.9); /* Light grey with slight transparency */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form header styling */
+.profile-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #070707;
+}
+
+/* Form element styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Logout button styling */
+#logoutButton {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #FF4136;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#logoutButton:hover {
+  background-color: #c7001e;
+}

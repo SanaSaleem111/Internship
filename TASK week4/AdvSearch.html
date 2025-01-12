@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Search</title>
+  <link rel="stylesheet" href="AdvSearch.css">
+</head>
+<body>
+
+  <h1>Advanced Search</h1>
+
+  <!-- Filters Section -->
+  <div class="filters">
+    <h3>Filters</h3>
+
+    <div class="filter-group">
+      <label for="location">Location:</label>
+      <select id="location" class="filter">
+        <option value="any">Any</option>
+        <option value="Gujrat">Gujrat</option>
+        <option value="Islamabad">Islamabad</option>
+        <option value="Lahore">Lahore</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="category">Category:</label>
+      <select id="category" class="filter">
+        <option value="any">Any</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="home-goods">Home Goods</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="sub-category">Sub-Category:</label>
+      <select id="sub-category" class="filter">
+        <option value="any">Any</option>
+        <option value="phones">Phones</option>
+        <option value="laptops">Laptops</option>
+        <option value="furniture">Furniture</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="popularity">Popularity:</label>
+      <select id="popularity" class="filter">
+        <option value="any">Any</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Search Results Section -->
+  <div class="results">
+    <h3>Search Results</h3>
+    <ul id="results-list">
+      <!-- Results will be dynamically populated here -->
+    </ul>
+  </div>
+
+  <script src="AdvSearch.js"></script>
+</body>
+</html>

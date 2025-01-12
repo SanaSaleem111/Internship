@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interaction & Reviews</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>User Interaction & Reviews</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2>Review Enhancements</h2>
+            <div class="filters">
+                <label for="rating-filter">Filter by Rating:</label>
+                <select id="rating-filter">
+                    <option value="all">All</option>
+                    <option value="4">4 Stars and Above</option>
+                    <option value="3">3 Stars and Above</option>
+                </select>
+
+                <label for="sort-reviews">Sort by:</label>
+                <select id="sort-reviews">
+                    <option value="recent">Most Recent</option>
+                    <option value="helpful">Most Helpful</option>
+                </select>
+            </div>
+
+            <div class="reviews">
+                <div class="review" data-rating="5">
+                    <p><strong>User A:</strong> Amazing experience! 5 stars.</p>
+                    <p>Rating: ⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="review" data-rating="4">
+                    <p><strong>User B:</strong> Good service but needs improvement. 4 stars.</p>
+                    <p>Rating: ⭐⭐⭐⭐</p>
+                </div>
+                <div class="review" data-rating="3">
+                    <p><strong>User C:</strong> Satisfactory experience. 3 stars.</p>
+                    <p>Rating: ⭐⭐⭐</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profile" class="section">
+        <div class="container">
+            <h2>User Profile</h2>
+            <form class="profile-form">
+                <div class="form-group">
+                    <label for="fav-categories">Favorite Categories:</label>
+                    <input type="text" id="fav-categories" placeholder="E.g., Technology, Travel">
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Budget:</label>
+                    <input type="text" id="budget" placeholder="E.g., $100 - $500">
+                </div>
+
+                <button type="submit">Save Preferences</button>
+            </form>
+
+            <div class="preferences">
+                <h3>Your Preferences</h3>
+                <p><strong>Favorite Categories:</strong> <span id="display-categories">None</span></p>
+                <p><strong>Budget:</strong> <span id="display-budget">None</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p> Thank You!.</p>
+        </div>
+    </footer>
+
+    <script src="user.js" defer></script>
+</body>
+</html>

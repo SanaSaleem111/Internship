@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price Listing Feature</title>
+  <link rel="stylesheet" href="pricelist.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="filter-bar">
+    <div class="filter">
+      <label for="location-filter">Location:</label>
+      <select id="location-filter">
+        <option value="">All Locations</option>
+        <option value="Gujrat">Gujrat</option>
+        <option value="Lahore">Lahore</option>
+        <option value="Islamabad">Islamabad</option>
+      </select>
+    </div>
+    <div class="filter">
+      <label for="price-range-filter">Price Range:</label>
+      <select id="price-range-filter">
+        <option value="">All Prices</option>
+        <option value="low">$ - Low</option>
+        <option value="medium">$$ - Medium</option>
+        <option value="high">$$$ - High</option>
+      </select>
+    </div>
+    <div class="filter">
+      <label for="popularity-filter">Popularity:</label>
+      <select id="popularity-filter">
+        <option value="">All</option>
+        <option value="popular">Most Popular</option>
+        <option value="average">Average</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="service-list" id="service-list">
+    <div class="service-item" data-location="Gujrat" data-price="low" data-popularity="popular">
+      <h3>Service A</h3>
+      <p>Location: Gujrat</p>
+      <p>Price: $</p>
+      <p>Popularity: Popular</p>
+    </div>
+    <div class="service-item" data-location="Lahore" data-price="medium" data-popularity="average">
+      <h3>Service B</h3>
+      <p>Location: Lahore</p>
+      <p>Price: $$</p>
+      <p>Popularity: Average</p>
+    </div>
+    <div class="service-item" data-location="Islamabad" data-price="high" data-popularity="popular">
+      <h3>Service C</h3>
+      <p>Location: Islamabad</p>
+      <p>Price: $$$</p>
+      <p>Popularity: Popular</p>
+    </div>
+    <!-- Add more services as needed -->
+  </div>
+</div>
+
+<script src="pricelist.js"></script>
+
+</body>
+</html>
